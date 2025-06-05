@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Page</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Pics/logoo.png"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="trainer.html">Trainer</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="main-menu" onclick="menutoggle()">
+            <div class="menu">
+                <input type="checkbox" name="" id="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="small-container">
+    <div class="row">
+        <div class="col-2">
+            <h1>Your Personal Trainer</h1>
+            <p>Welcome to the trainer's page. Here you can learn more about your coach and upcoming sessions.</p>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> trainer@example.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+        </div>
+        <div class="col-2">
+            <img src="Pics/logo.png" alt="Trainer" style="max-width:300px;">
+        </div>
+    </div>
+
+    <h2 class="title">Weekly Schedule</h2>
+    <div class="row">
+        <div class="col-4">
+            <h4>Monday</h4>
+            <p>Strength Training - 9:00 AM</p>
+        </div>
+        <div class="col-4">
+            <h4>Wednesday</h4>
+            <p>Cardio Session - 10:00 AM</p>
+        </div>
+        <div class="col-4">
+            <h4>Friday</h4>
+            <p>Flexibility & Recovery - 8:00 AM</p>
+        </div>
+    </div>
+  </div>
+
+  <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+  </script>
+</body>
+</html>
